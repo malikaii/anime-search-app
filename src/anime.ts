@@ -6,6 +6,10 @@ export interface Anime {
     type: String,
     genre: String,
     end_date: String
+}
 
-
+export interface Person {
+    name: String,
+    age: number,
+    major: String
 }

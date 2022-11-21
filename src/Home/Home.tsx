@@ -8,6 +8,7 @@ function Home() {
     const handleChange = (e: any) => {
         setSearchInput(e.target.value);
         
+        
     } 
     const fetchResults = async () => {
         await fetch(`https://api.jikan.moe/v4/anime?q=${searchInput}`)
@@ -19,6 +20,8 @@ function Home() {
             
         });
     }
+
+    
 
   return (
     <div className="container">
